@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class DrawerItemModel {
-  DrawerItemModel({
+  const DrawerItemModel({
     required this.title,
     required this.icon,
   });
