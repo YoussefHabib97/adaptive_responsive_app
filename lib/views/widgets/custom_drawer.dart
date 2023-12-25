@@ -12,7 +12,7 @@ import 'package:adaptive_responsive_app/views/widgets/custom_drawer_item_list_vi
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});
 
-  final List<DrawerItemModel> items = const [
+  static const List<DrawerItemModel> items = [
     DrawerItemModel(
       title: "D A S H B O A R D",
       icon: Icons.home,
@@ -33,11 +33,11 @@ class CustomDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Drawer(
-      backgroundColor: const Color(0xFFDBDBDB),
+    return const Drawer(
+      backgroundColor: Color(0xFFDBDBDB),
       child: Column(
         children: [
-          const DrawerHeader(
+          DrawerHeader(
             child: FaIcon(
               FontAwesomeIcons.solidHeart,
               size: 48,
