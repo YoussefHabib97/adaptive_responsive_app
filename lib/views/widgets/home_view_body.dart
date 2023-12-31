@@ -1,3 +1,4 @@
+import 'package:adaptive_responsive_app/views/widgets/custom_list.dart';
 import 'package:adaptive_responsive_app/views/widgets/custom_list_view.dart';
 import 'package:adaptive_responsive_app/views/widgets/custom_sliver_grid.dart';
 import 'package:flutter/material.dart';
@@ -18,7 +19,7 @@ class HomeViewBody extends StatelessWidget {
             child: LayoutBuilder(builder: (context, constraints) {
               if (constraints.maxWidth >= 600) {
                 // Tablet Layout
-                return const Text("Tablet Layout");
+                return const CustomList();
               } else {
                 return const CustomSliverGrid();
               }
